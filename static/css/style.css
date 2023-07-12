@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 20px 0;
+  text-align: center;
+  background-image: url(../img/under-construction-tape.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;;
+}
+
+.logo {
+  width: 350px;
+}
+
+.sublogo {
+  width: 350px;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+
+.phrase {
+  line-height: 40px;
+}
+
+.info {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-weight: 300;
+}
+
+.services {
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 5px;
+}
+
+.service {
+  padding: 10px;
+}
+
+.service-icon {
+  height: 15vw;
+  max-height: 50px;
+}
+
+@media (max-width: 900px) {
+  .content {
+    background-image: url(../img/under-construction-tape-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .content{
+    background-image: url(../img/under-construction-tape-3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 12px;
+  }
+
+  .phrase {
+    line-height: 30px;
+  }
+}
